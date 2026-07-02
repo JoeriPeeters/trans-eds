@@ -167,6 +167,7 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
+  color: var(--color-white);
 }
 
 header nav[aria-expanded='true'] .nav-sections {
