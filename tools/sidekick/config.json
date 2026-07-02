@@ -1,4 +1,12 @@
 {
   "project": "TransGlobal",
-  "host": "main--trans-eds--joeripeeters.aem.page"
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": ["edit"],
+      "url": "/tools/sidekick/library.html",
+      "includePaths": ["**.docx**", "**.md**"]
+    }
+  ]
 }
