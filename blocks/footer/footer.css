@@ -15,11 +15,24 @@ footer .footer p {
   margin: 0;
 }
 
-/* Column layout (uses Columns block or lists) */
-footer .footer .columns > div {
+/* Main columns: brand (wider) + up to 4 link columns */
+footer .footer .columns:not(.legal) > div {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   gap: 32px;
+}
+
+/* Brand cell (logo icon + name + tagline) */
+footer .footer .columns img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+footer .footer strong {
+  color: var(--color-white);
+  font-size: var(--heading-font-size-s);
 }
 
 /* Column headings */
@@ -31,11 +44,6 @@ footer .footer h4 {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   margin: 0 0 16px;
-}
-
-/* Brand name (first column) */
-footer .footer strong {
-  color: var(--color-white);
 }
 
 /* Links */
@@ -59,23 +67,27 @@ footer .footer ul {
   gap: 12px;
 }
 
-/* Bottom bar (copyright + legal) */
-footer .footer hr {
-  border: 0;
+/* Legal bottom bar: copyright left, legal links right */
+footer .footer .columns.legal {
   border-top: 1px solid rgb(255 255 255 / 10%);
-  margin: 40px 0 24px;
+  margin-top: 40px;
+  padding-top: 24px;
 }
 
-footer .footer .footer-bottom,
-footer .footer > div > p:last-of-type {
+footer .footer .columns.legal > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   color: var(--color-medium-gray);
   font-size: var(--body-font-size-xs);
 }
 
 /* Tablet + mobile */
 @media (width <= 900px) {
-  footer .footer .columns > div {
+  footer .footer .columns:not(.legal) > div {
     grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
   }
 }
 
@@ -84,8 +96,13 @@ footer .footer > div > p:last-of-type {
     padding: 40px 24px 24px;
   }
 
-  footer .footer .columns > div {
+  footer .footer .columns:not(.legal) > div {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  footer .footer .columns.legal > div {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

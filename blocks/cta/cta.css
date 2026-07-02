@@ -1,0 +1,88 @@
+/* CTA Block - TransGlobal blue band */
+.cta {
+  background: var(--color-ocean-blue);
+  color: var(--color-white);
+}
+
+.cta > div {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+
+.cta .cta-content h1,
+.cta .cta-content h2,
+.cta .cta-content h3 {
+  color: var(--color-white);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.cta .cta-content p {
+  font-size: var(--body-font-size-m);
+  color: var(--color-white);
+  margin: 0 0 24px;
+  opacity: 0.95;
+}
+
+/* Buttons */
+.cta .cta-content .button-container {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+}
+
+.cta .cta-content a.button {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Primary = white button with blue text */
+.cta .cta-content a.button.primary {
+  background: var(--color-white);
+  color: var(--color-ocean-blue);
+  border: 2px solid var(--color-white);
+}
+
+.cta .cta-content a.button.primary:hover {
+  background: var(--color-light-gray);
+  border-color: var(--color-light-gray);
+}
+
+/* Secondary = outline */
+.cta .cta-content a.button.secondary {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid rgb(255 255 255 / 60%);
+}
+
+.cta .cta-content a.button.secondary:hover {
+  border-color: var(--color-white);
+  background: rgb(255 255 255 / 10%);
+}
+
+@media (width <= 600px) {
+  .cta > div {
+    padding: 48px 24px;
+  }
+
+  .cta .cta-content h1,
+  .cta .cta-content h2,
+  .cta .cta-content h3 {
+    font-size: 28px;
+  }
+
+  .cta .cta-content .button-container {
+    flex-direction: column;
+  }
+
+  .cta .cta-content a.button {
+    width: 100%;
+    text-align: center;
+  }
+}

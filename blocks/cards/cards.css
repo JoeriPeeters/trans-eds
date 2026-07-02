@@ -126,3 +126,53 @@
     gap: 16px;
   }
 }
+
+/* ---- Benefits variant (Why Choose Us, on dark section) ---- */
+.cards.benefits {
+  padding: 0;
+  background: transparent;
+}
+
+.cards.benefits > ul {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.cards.benefits > ul > li {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  gap: 8px;
+}
+
+.cards.benefits > ul > li:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.cards.benefits .cards-card-image {
+  font-size: 40px;
+}
+
+.cards.benefits .cards-card-body h3 {
+  color: var(--color-white);
+  font-size: var(--heading-font-size-s);
+}
+
+.cards.benefits .cards-card-body p {
+  color: var(--color-medium-gray);
+  font-size: var(--body-font-size-s);
+}
+
+@media (width <= 900px) {
+  .cards.benefits > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 600px) {
+  .cards.benefits > ul {
+    grid-template-columns: 1fr;
+  }
+}

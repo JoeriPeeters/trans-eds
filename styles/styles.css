@@ -341,3 +341,17 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* dark navy section (e.g. Why Choose Us) */
+main .section.dark {
+  background-color: var(--color-navy-dark);
+  color: var(--color-white);
+  margin: 0;
+  padding: 64px 0;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3 {
+  color: var(--color-white);
+}
