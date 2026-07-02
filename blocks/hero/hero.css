@@ -102,21 +102,22 @@
   line-height: 1;
 }
 
-/* Right column - ship illustration */
+/* Right column - authored illustration image */
 .hero-illustration {
   min-height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
-  background: rgb(20 71 107);
+  overflow: hidden;
   border-radius: 16px;
+  background: rgb(20 71 107);
 }
 
-.hero-illustration svg {
+.hero-illustration picture,
+.hero-illustration img {
   width: 100%;
-  height: auto;
-  max-width: 520px;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Tablet */

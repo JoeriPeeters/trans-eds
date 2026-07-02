@@ -2,11 +2,7 @@
 Hero
 ---
 
-# Global Logistics Solutions for Your Industry
-
-Trusted by industry leaders across 90 countries. Specialized expertise in Pharma, Chemicals, Oil & Gas, and Automotive logistics.
-
-[Request a Quote](/quote) [Explore Services](/services)
+| # Global Logistics Solutions for Your Industry<br>Trusted by industry leaders across 90 countries. Specialized expertise in Pharma, Chemicals, Oil & Gas, and Automotive logistics.<br>[Request a Quote](/quote) [Explore Services](/services)<br>- **90+** Countries<br>- **25+** Years Experience<br>- **10K+** Shipments/Month | ![Container ship](/media/hero-ship.jpg) |
 
 ---
 
