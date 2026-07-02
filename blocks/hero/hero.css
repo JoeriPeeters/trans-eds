@@ -77,16 +77,46 @@
   background: rgb(255 255 255 / 10%);
 }
 
-/* Right column - illustration */
+/* Trust badges (90+ / 25+ / 10K+) */
+.hero-content .hero-stats {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.hero-content .hero-stats li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-medium-gray);
+}
+
+.hero-content .hero-stats strong {
+  color: var(--color-accent-blue);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Right column - ship illustration */
 .hero-illustration {
-  min-height: 400px;
+  min-height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Placeholder for container ship illustration */
-  background: linear-gradient(180deg, rgb(0 122 204 / 10%) 0%, transparent 100%);
+  padding: 24px;
+  background: rgb(20 71 107);
   border-radius: 16px;
+}
+
+.hero-illustration svg {
+  width: 100%;
+  height: auto;
+  max-width: 520px;
 }
 
 /* Tablet */
