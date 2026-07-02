@@ -1,3 +1,7 @@
+---
+Hero
+---
+
 # Global Logistics Solutions for Your Industry
 
 Trusted by industry leaders across 90 countries. Specialized expertise in Pharma, Chemicals, Oil & Gas, and Automotive logistics.
@@ -5,49 +9,37 @@ Trusted by industry leaders across 90 countries. Specialized expertise in Pharma
 [Request a Quote](/quote) [Explore Services](/services)
 
 ---
-Hero
+
+---
+Cards (services)
 ---
 
 ## Comprehensive Logistics Solutions
 
 End-to-end supply chain management tailored to your industry
 
----
-Cards (services)
----
+| ![✈️](/icons/air-freight.svg) |
+|---|
+| **Air Freight** |
+| Fast, reliable air cargo services with real-time tracking and customs support. |
+| [Learn More →](/services/air-freight) |
 
-### Air Freight
+| ![🚢](/icons/ocean-freight.svg) |
+|---|
+| **Ocean Freight** |
+| Cost-effective sea shipping for FCL and LCL with global port coverage. |
+| [Learn More →](/services/ocean-freight) |
 
-![Air Freight Icon](/icons/air-freight.svg)
+| ![🚛](/icons/road-transport.svg) |
+|---|
+| **Road Transport** |
+| Flexible ground logistics with temperature-controlled and hazmat capabilities. |
+| [Learn More →](/services/road-transport) |
 
-Fast, reliable air cargo services with real-time tracking and customs support.
+| ![📦](/icons/warehousing.svg) |
+|---|
+| **Warehousing** |
+| Secure storage facilities with inventory management and distribution. |
+| [Learn More →](/services/warehousing) |
 
-[Learn More](/services/air-freight)
-
-### Ocean Freight
-
-![Ocean Freight Icon](/icons/ocean-freight.svg)
-
-Cost-effective sea shipping for FCL and LCL with global port coverage.
-
-[Learn More](/services/ocean-freight)
-
-### Road Transport
-
-![Road Transport Icon](/icons/road-transport.svg)
-
-Flexible ground logistics with temperature-controlled and hazmat capabilities.
-
-[Learn More](/services/road-transport)
-
-### Warehousing
-
-![Warehousing Icon](/icons/warehousing.svg)
-
-Secure storage facilities with inventory management and distribution.
-
-[Learn More](/services/warehousing)
-
----
-Cards (services)
 ---
