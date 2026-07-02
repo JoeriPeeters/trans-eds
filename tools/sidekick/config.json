@@ -1,0 +1,14 @@
+{
+  "project": "TransGlobal",
+  "host": "main--trans-eds--joeripeeters.aem.page",
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": ["edit", "dev", "preview"],
+      "url": "/tools/sidekick/library/library.html",
+      "isPalette": true,
+      "paletteRect": "top: 50px; bottom: 20px; left: 20px; right: 20px;"
+    }
+  ]
+}

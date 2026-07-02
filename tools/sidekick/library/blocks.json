@@ -1,0 +1,33 @@
+{
+  "total": 5,
+  "offset": 0,
+  "limit": 5,
+  "data": [
+    {
+      "name": "Hero",
+      "description": "Two-column hero section with headline, description, and CTAs. Navy background.",
+      "path": "/tools/sidekick/library/blocks/hero"
+    },
+    {
+      "name": "Cards (Services)",
+      "description": "4-column grid of service cards with icons, titles, descriptions, and links.",
+      "path": "/tools/sidekick/library/blocks/cards-services"
+    },
+    {
+      "name": "Cards (Industries)",
+      "description": "2x2 grid of industry cards with blue gradient backgrounds.",
+      "path": "/tools/sidekick/library/blocks/cards-industries"
+    },
+    {
+      "name": "Columns",
+      "description": "Multi-column layout for content.",
+      "path": "/tools/sidekick/library/blocks/columns"
+    },
+    {
+      "name": "Fragment",
+      "description": "Reusable content fragment.",
+      "path": "/tools/sidekick/library/blocks/fragment"
+    }
+  ],
+  ":type": "sheet"
+}

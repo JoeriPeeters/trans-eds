@@ -1,0 +1,16 @@
+{
+  "total": 2,
+  "offset": 0,
+  "limit": 2,
+  "data": [
+    {
+      "title": "Blocks",
+      "path": "https://main--trans-eds--joeripeeters.aem.page/tools/sidekick/library/blocks.json"
+    },
+    {
+      "title": "Templates",
+      "path": "https://main--trans-eds--joeripeeters.aem.page/tools/sidekick/library/templates.json"
+    }
+  ],
+  ":type": "sheet"
+}

@@ -1,0 +1,18 @@
+{
+  "total": 2,
+  "offset": 0,
+  "limit": 2,
+  "data": [
+    {
+      "name": "Homepage",
+      "description": "TransGlobal homepage template with hero, services, and industries sections.",
+      "path": "/tools/sidekick/library/templates/homepage"
+    },
+    {
+      "name": "Service Page",
+      "description": "Service detail page template.",
+      "path": "/tools/sidekick/library/templates/service-page"
+    }
+  ],
+  ":type": "sheet"
+}
