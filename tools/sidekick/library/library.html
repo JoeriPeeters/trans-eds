@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Library</title>
+  <script type="module">
+    // Redirect to the library JSON endpoint
+    const libraryPath = '/tools/sidekick/library.json';
+    const baseURL = window.location.origin;
+
+    // Load library data
+    async function loadLibrary() {
+      const response = await fetch(`${baseURL}${libraryPath}`);
+      const data = await response.json();
+
+      // Pass to parent (Sidekick)
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: 'aem-library-loaded',
+          data
+        }, '*');
+      }
+    }
+
+    loadLibrary();
+  </script>
+</head>
+<body>
+  <p>Loading library...</p>
+</body>
+</html>
