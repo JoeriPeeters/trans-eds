@@ -1,8 +1,13 @@
 {
-  "total": 5,
+  "total": 6,
   "offset": 0,
-  "limit": 5,
+  "limit": 6,
   "data": [
+    {
+      "name": "Header",
+      "description": "Navigation header with logo and menu items.",
+      "path": "/tools/sidekick/library/blocks/header"
+    },
     {
       "name": "Hero",
       "description": "Two-column hero section with headline, description, and CTAs. Navy background.",
