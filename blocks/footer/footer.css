@@ -1,20 +1,91 @@
+/* Footer - TransGlobal */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--color-navy-dark);
+  color: var(--color-light-gray);
+  font-size: var(--body-font-size-s);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: var(--container-width);
+  padding: 60px 40px 32px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
+/* Column layout (uses Columns block or lists) */
+footer .footer .columns > div {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+/* Column headings */
+footer .footer h1,
+footer .footer h2,
+footer .footer h3,
+footer .footer h4 {
+  color: var(--color-white);
+  font-size: var(--heading-font-size-s);
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+/* Brand name (first column) */
+footer .footer strong {
+  color: var(--color-white);
+}
+
+/* Links */
+footer .footer a:any-link {
+  color: var(--color-light-gray);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer .footer a:hover {
+  color: var(--color-light-blue);
+}
+
+/* Link lists */
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Bottom bar (copyright + legal) */
+footer .footer hr {
+  border: 0;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  margin: 40px 0 24px;
+}
+
+footer .footer .footer-bottom,
+footer .footer > div > p:last-of-type {
+  color: var(--color-medium-gray);
+  font-size: var(--body-font-size-xs);
+}
+
+/* Tablet + mobile */
+@media (width <= 900px) {
+  footer .footer .columns > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width <= 600px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 40px 24px 24px;
+  }
+
+  footer .footer .columns > div {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
