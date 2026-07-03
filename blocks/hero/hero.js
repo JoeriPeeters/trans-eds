@@ -1,21 +1,20 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
-  // authored as a 2-column row: cell 1 = text content, cell 2 = image (optional)
-  const row = block.querySelector(':scope > div');
-  if (!row) return;
-
-  const cells = [...row.children];
+  // find the image regardless of authoring shape: 2 cols in 1 row, or 2 rows
+  const cells = [...block.querySelectorAll(':scope > div > div')];
   const imageCell = cells.find((cell) => cell.querySelector('picture'));
-  const contentCell = cells.find((cell) => cell !== imageCell) || cells[0];
 
   const container = document.createElement('div');
   container.className = 'hero-container';
 
-  // left column: headline, subtext, buttons, trust badges
+  // left column: every authored cell that isn't the image cell
   const leftCol = document.createElement('div');
   leftCol.className = 'hero-content';
-  while (contentCell?.firstElementChild) leftCol.append(contentCell.firstElementChild);
+  cells.forEach((cell) => {
+    if (cell === imageCell) return;
+    while (cell.firstElementChild) leftCol.append(cell.firstElementChild);
+  });
 
   // trust badges: a bulleted list becomes the stats row
   const stats = leftCol.querySelector('ul');
